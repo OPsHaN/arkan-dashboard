@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+    <title>تسجيل الدخول الى السيستم</title>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/css-comps.css">
+    <link rel="stylesheet" href="css/re575.css">
+    <link rel="stylesheet" href="css/re768.css">
+    <link rel="stylesheet" href="css/re991.css">
+    <link rel="stylesheet" href="css/re1200.css">
+    <link href='https://fonts.googleapis.com/css?family=Tajawal' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|
+    Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="right-side-block">
+    <aside>
+        <span class="material-icons material-icons-outlined bars">menu</span>
+        <div class="profile-block">
+            <div class="profile__img">
+                <img src="img/ebad elrahman-blue.png">
+            </div>
+            <span class="profile__name">مرحبا بك</span>
+            <!-- <span class="profile__skill">Front-End Developer</span> -->
+        </div>
+        <br>
+        <ul>
+            <li class="is-active my-3">
+                <a href="login.html"><span class="material-icons material-icons-outlined ic">login</span>تسجيل الدخول</a></li>
+        </ul>
+        
+
+    </aside>
+    <p class="copy-right"><a href="https://it-whale.com/home">IT Wale &copy;</a></p>
+</div>
+
+<div class="left-side-block">
+
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 header-block">
+                    <div class="header__right">
+                        <a href="#" class="menu-icon bars">
+                            <div class="material-icons md-24 material-icons-outlined">menu</div>
+                        </a>
+                        <h1 class="logo">ساحل اركان للتطوير العقارى</h1>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-content container-fluid">
+            <div id="carbon-block" style="margin:30px auto"></div>
+            <div class="row my-5 d-flex justify-content-center align-items-center" >
+                <div class="col-8 ">
+                    <div class="banner-type-one banner-type-one__details-block">
+                        <h3 class="mb-3 d-flex justify-content-center"> تسجيل الدخول</h3>
+                        <hr class="mb-3">
+                        <form action="index.html" class="setting-form">
+                            <label class="input-help text-right margin-bottom-12" >
+                                اسم المستخدم
+                            </label>
+                            <input class="text mt-3" placeholder="اسم المستخدم" value="">
+            
+                            <label class="input-help text-right margin-bottom-12" >
+                                كلمة المرور
+                            </label>
+                            <input class="text text-left mt-3" type="password" id="myPass" placeholder="كلمة المرور" value="">
+            
+                            <br>
+                            <button class="jf-button">تسجيل الدخول</button><input type="checkbox" onclick="myFunction()"> إظهار كلمة السر
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<script>
+    function myFunction() {
+  var x = document.getElementById("myPass");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+</html>
